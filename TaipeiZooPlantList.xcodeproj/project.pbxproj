@@ -3,18 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		278C7D69276602FD006AAA0D /* cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 278C7D68276602FD006AAA0D /* cover.png */; };
+		278C7D6C276603B9006AAA0D /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278C7D6B276603B9006AAA0D /* SectionHeaderView.swift */; };
+		278C7D6E276603C3006AAA0D /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278C7D6D276603C3006AAA0D /* SectionHeaderView.xib */; };
 		27B23F232763398A00117B94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B23F222763398A00117B94 /* AppDelegate.swift */; };
 		27B23F252763398A00117B94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B23F242763398A00117B94 /* SceneDelegate.swift */; };
-		27B23F272763398A00117B94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B23F262763398A00117B94 /* ViewController.swift */; };
+		27B23F272763398A00117B94 /* PlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B23F262763398A00117B94 /* PlantsViewController.swift */; };
 		27B23F2A2763398A00117B94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B23F282763398A00117B94 /* Main.storyboard */; };
 		27B23F2C2763398B00117B94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B23F2B2763398B00117B94 /* Assets.xcassets */; };
 		27B23F2F2763398B00117B94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B23F2D2763398B00117B94 /* LaunchScreen.storyboard */; };
 		27B23F3A2763398B00117B94 /* TaipeiZooPlantListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B23F392763398B00117B94 /* TaipeiZooPlantListTests.swift */; };
 		27B23F452763398B00117B94 /* TaipeiZooPlantListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B23F442763398B00117B94 /* TaipeiZooPlantListUITests.swift */; };
+		27B23F532765ACDC00117B94 /* PlantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B23F522765ACDC00117B94 /* PlantsViewModel.swift */; };
+		27B23F552765ACE400117B94 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B23F542765ACE400117B94 /* Plant.swift */; };
+		27B23F572765AE7B00117B94 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B23F562765AE7B00117B94 /* WebService.swift */; };
+		27B23F592765CF5F00117B94 /* PlantTableViewDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B23F582765CF5F00117B94 /* PlantTableViewDataProvider.swift */; };
+		27B23F5C2765D02D00117B94 /* PlantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B23F5A2765D02D00117B94 /* PlantTableViewCell.swift */; };
+		27B23F5D2765D02D00117B94 /* PlantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27B23F5B2765D02D00117B94 /* PlantTableViewCell.xib */; };
+		27B23F5F2765DA9B00117B94 /* UIImage + SDImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B23F5E2765DA9B00117B94 /* UIImage + SDImage.swift */; };
+		39241697D8F3BCD1ED693551 /* Pods_TaipeiZooPlantList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6776C748EEA931DC8D2AB25A /* Pods_TaipeiZooPlantList.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		278C7D68276602FD006AAA0D /* cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover.png; sourceTree = "<group>"; };
+		278C7D6B276603B9006AAA0D /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		278C7D6D276603C3006AAA0D /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
 		27B23F1F2763398A00117B94 /* TaipeiZooPlantList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaipeiZooPlantList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B23F222763398A00117B94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27B23F242763398A00117B94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		27B23F262763398A00117B94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27B23F262763398A00117B94 /* PlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewController.swift; sourceTree = "<group>"; };
 		27B23F292763398A00117B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27B23F2B2763398B00117B94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27B23F2E2763398B00117B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +63,17 @@
 		27B23F402763398B00117B94 /* TaipeiZooPlantListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaipeiZooPlantListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B23F442763398B00117B94 /* TaipeiZooPlantListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiZooPlantListUITests.swift; sourceTree = "<group>"; };
 		27B23F462763398B00117B94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B23F522765ACDC00117B94 /* PlantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewModel.swift; sourceTree = "<group>"; };
+		27B23F542765ACE400117B94 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		27B23F562765AE7B00117B94 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		27B23F582765CF5F00117B94 /* PlantTableViewDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableViewDataProvider.swift; sourceTree = "<group>"; };
+		27B23F5A2765D02D00117B94 /* PlantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableViewCell.swift; sourceTree = "<group>"; };
+		27B23F5B2765D02D00117B94 /* PlantTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlantTableViewCell.xib; sourceTree = "<group>"; };
+		27B23F5E2765DA9B00117B94 /* UIImage + SDImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + SDImage.swift"; sourceTree = "<group>"; };
+		27B23F602765DC7E00117B94 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C47C10519659EDBA96B9347 /* Pods-TaipeiZooPlantList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaipeiZooPlantList.debug.xcconfig"; path = "Target Support Files/Pods-TaipeiZooPlantList/Pods-TaipeiZooPlantList.debug.xcconfig"; sourceTree = "<group>"; };
+		6776C748EEA931DC8D2AB25A /* Pods_TaipeiZooPlantList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaipeiZooPlantList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57EDA2FF5358D6E10F6FEFF /* Pods-TaipeiZooPlantList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaipeiZooPlantList.release.xcconfig"; path = "Target Support Files/Pods-TaipeiZooPlantList/Pods-TaipeiZooPlantList.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39241697D8F3BCD1ED693551 /* Pods_TaipeiZooPlantList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +109,8 @@
 				27B23F382763398B00117B94 /* TaipeiZooPlantListTests */,
 				27B23F432763398B00117B94 /* TaipeiZooPlantListUITests */,
 				27B23F202763398A00117B94 /* Products */,
+				A723302782E47452BF8DCE7F /* Pods */,
+				575511126991906895140A6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +129,18 @@
 			children = (
 				27B23F222763398A00117B94 /* AppDelegate.swift */,
 				27B23F242763398A00117B94 /* SceneDelegate.swift */,
-				27B23F262763398A00117B94 /* ViewController.swift */,
 				27B23F282763398A00117B94 /* Main.storyboard */,
+				27B23F262763398A00117B94 /* PlantsViewController.swift */,
+				27B23F582765CF5F00117B94 /* PlantTableViewDataProvider.swift */,
+				27B23F522765ACDC00117B94 /* PlantsViewModel.swift */,
+				278C7D6B276603B9006AAA0D /* SectionHeaderView.swift */,
+				278C7D6D276603C3006AAA0D /* SectionHeaderView.xib */,
+				27B23F5A2765D02D00117B94 /* PlantTableViewCell.swift */,
+				27B23F5B2765D02D00117B94 /* PlantTableViewCell.xib */,
+				27B23F5E2765DA9B00117B94 /* UIImage + SDImage.swift */,
+				27B23F542765ACE400117B94 /* Plant.swift */,
+				27B23F562765AE7B00117B94 /* WebService.swift */,
+				278C7D68276602FD006AAA0D /* cover.png */,
 				27B23F2B2763398B00117B94 /* Assets.xcassets */,
 				27B23F2D2763398B00117B94 /* LaunchScreen.storyboard */,
 				27B23F302763398B00117B94 /* Info.plist */,
@@ -128,6 +166,24 @@
 			path = TaipeiZooPlantListUITests;
 			sourceTree = "<group>";
 		};
+		575511126991906895140A6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27B23F602765DC7E00117B94 /* libSDWebImage.a */,
+				6776C748EEA931DC8D2AB25A /* Pods_TaipeiZooPlantList.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A723302782E47452BF8DCE7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C47C10519659EDBA96B9347 /* Pods-TaipeiZooPlantList.debug.xcconfig */,
+				E57EDA2FF5358D6E10F6FEFF /* Pods-TaipeiZooPlantList.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27B23F492763398B00117B94 /* Build configuration list for PBXNativeTarget "TaipeiZooPlantList" */;
 			buildPhases = (
+				EAFF1559B6E3033DAA315BEC /* [CP] Check Pods Manifest.lock */,
 				27B23F1B2763398A00117B94 /* Sources */,
 				27B23F1C2763398A00117B94 /* Frameworks */,
 				27B23F1D2763398A00117B94 /* Resources */,
+				B00FB43F4346706E9A9F9AAE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +290,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				27B23F2F2763398B00117B94 /* LaunchScreen.storyboard in Resources */,
+				278C7D6E276603C3006AAA0D /* SectionHeaderView.xib in Resources */,
+				27B23F5D2765D02D00117B94 /* PlantTableViewCell.xib in Resources */,
+				278C7D69276602FD006AAA0D /* cover.png in Resources */,
 				27B23F2C2763398B00117B94 /* Assets.xcassets in Resources */,
 				27B23F2A2763398A00117B94 /* Main.storyboard in Resources */,
 			);
@@ -253,13 +314,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B00FB43F4346706E9A9F9AAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaipeiZooPlantList/Pods-TaipeiZooPlantList-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaipeiZooPlantList/Pods-TaipeiZooPlantList-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaipeiZooPlantList/Pods-TaipeiZooPlantList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAFF1559B6E3033DAA315BEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaipeiZooPlantList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		27B23F1B2763398A00117B94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B23F272763398A00117B94 /* ViewController.swift in Sources */,
+				27B23F592765CF5F00117B94 /* PlantTableViewDataProvider.swift in Sources */,
+				27B23F572765AE7B00117B94 /* WebService.swift in Sources */,
+				27B23F552765ACE400117B94 /* Plant.swift in Sources */,
+				27B23F5F2765DA9B00117B94 /* UIImage + SDImage.swift in Sources */,
+				27B23F272763398A00117B94 /* PlantsViewController.swift in Sources */,
 				27B23F232763398A00117B94 /* AppDelegate.swift in Sources */,
+				27B23F5C2765D02D00117B94 /* PlantTableViewCell.swift in Sources */,
+				278C7D6C276603B9006AAA0D /* SectionHeaderView.swift in Sources */,
+				27B23F532765ACDC00117B94 /* PlantsViewModel.swift in Sources */,
 				27B23F252763398A00117B94 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,12 +543,14 @@
 		};
 		27B23F4A2763398B00117B94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C47C10519659EDBA96B9347 /* Pods-TaipeiZooPlantList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FLHAUPL34C;
 				INFOPLIST_FILE = TaipeiZooPlantList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,12 +564,14 @@
 		};
 		27B23F4B2763398B00117B94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E57EDA2FF5358D6E10F6FEFF /* Pods-TaipeiZooPlantList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FLHAUPL34C;
 				INFOPLIST_FILE = TaipeiZooPlantList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
