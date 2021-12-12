@@ -7,27 +7,52 @@
 
 import XCTest
 @testable import TaipeiZooPlantList
+import Combine
 
 class TaipeiZooPlantListTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var viewModel: PlantsViewModel!
+    private var cancellables = Set<AnyCancellable>()
+    
+    override func setUp() {
+        super.setUp()
+        self.viewModel = PlantsViewModel()
+        self.viewModel.requestPlantsInfo()
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testZooPlantAPIAvailable(){
+        let expectation = self.expectation(description: "testZooPlantAPIAvailable")
+        viewModel.$plantList
+            .receive(on: DispatchQueue.main)
+            .sink { plants in
+                if plants.isEmpty && self.viewModel.plantList.isEmpty{
+                    return
+                }
+                expectation.fulfill()
+                XCTAssertTrue(plants.count > 0)
+            }.store(in: &cancellables)
+        self.waitForExpectations(timeout:20)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testResultCountIsEqual(){
+        let expectation = self.expectation(description: "testResultCountIsEqual")
+        
+        self.viewModel.$plantList
+            .receive(on: DispatchQueue.main)
+            .sink { plants in
+                defer{
+                    if !plants.isEmpty && plants.count == self.viewModel.totalPlantsCount{
+                        expectation.fulfill()
+                        XCTAssertEqual(self.viewModel.plantList.count, self.viewModel.totalPlantsCount)
+                    }
+                }
+                
+                if plants.isEmpty && self.viewModel.plantList.isEmpty{
+                    return
+                }
+                self.viewModel.requestPlantsInfo()
+            }.store(in: &cancellables)
+        
+        self.waitForExpectations(timeout:100)
     }
 
 }
